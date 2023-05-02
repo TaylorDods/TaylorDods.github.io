@@ -46,4 +46,14 @@ body, h1, h2, h3, h4, h5, h6, p, a {
   padding: 10px;
   border-radius: 5px;
 }
-  
+
+/* Change the color of related projects text so it is easily visable */
+.project-link {
+  font-weight: bold;
+  color: #524ac2f4;
+}
+
+/* Change the color of projects description text so it is easily visable */
+.project-description {
+  color: #333;
+}

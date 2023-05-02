@@ -9,14 +9,15 @@ if errorlevel 1 (
 )
 
 echo Pulling remote repository...
-git pull origin master --allow-unrelated-histories
+git pull origin main --allow-unrelated-histories
 echo Adding website files to the Git repository...
 git add .
 echo Committing the changes...
 git commit -m "Update website"
 echo Pushing the changes to GitHub...
-git push origin master
+git push origin main
 echo Deployment completed.
 pause
+
 
 

@@ -1,6 +1,6 @@
 /* Add background image to the body */
 body {
-  background-image: url('/img/Background.png');
+  background-image: url('../img/Background.png');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -56,4 +56,10 @@ body, h1, h2, h3, h4, h5, h6, p, a {
 /* Change the color of projects description text so it is easily visable */
 .project-description {
   color: #333;
+}
+
+.navbar-brand:hover {
+  color: inherit !important; 
+  cursor: default !important;
+  text-decoration: none !important;
 }

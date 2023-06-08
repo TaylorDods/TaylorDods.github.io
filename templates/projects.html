@@ -5,10 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <!-- Bootstrap CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="css/custom.css" rel="stylesheet">
+  <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
 
   <title>Taylor Dods E-Portfolio</title>
 </head>
@@ -16,53 +16,61 @@
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Taylor Dods</a>
+      <h1 class="navbar-brand">Taylor Dods</h1>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="qualifications.html">Qualifications</a>
+            <a class="nav-link" href="{{ url_for('qualifications') }}">Qualifications</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
+            <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-<script src="js/bootstrap.bundle.min.js"></script>  
+<script src="../static/js/bootstrap.bundle.min.js"></script>  
 <div class="container mt-5">
   <h2>Projects</h2>
   <div class="row">
     <div class="col-md-4">
       <div class="card">
-        <img class="card-img-top" src="/img/Chassis_SW.png" alt="Chassis Design">
+        <img class="card-img-top" src="../static/img/LLM_int_main.png" alt="LLM File Integration">
+        <div class="card-body">
+          <h5 class="card-title">Large Language Model File Integration</h5>
+          <p class="card-text project-description">This project aims to develop a versatile desktop application that allows uploading and organizing files of various formats to a MongoDB database. Utilizing a hybrid approach, the application stores each file alongside a vector embedding of its content, enhancing data retrieval through large language models. Currently, the back-end functions are implemented, and work is underway to develop the vector store for search functionality.</p>
+          <a href="{{ url_for('LLM_File_Integration') }}" class="btn btn-primary">View Project</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img class="card-img-top" src="../static/img/Chassis_SW.png" alt="Chassis Design">
         <div class="card-body">
           <h5 class="card-title">Shell Eco-Marathon: Chassis</h5>
           <p class="card-text project-description" >Our team designed and implemented a lightweight, energy-efficient chassis for the Shell Eco-Marathon competition, utilizing technologies such as SolidWorks, ANSYS, and python. Despite challenges integrating existing carbon fiber tubing with the vehicle shell and other components, we successfully created a structurally sound, modular design that was chosen for the competition.</p>
-          <a href="Shell_Eco_Chassis.html" class="btn btn-primary">View Project</a>
+          <a href="{{ url_for('Shell_Eco_Chassis') }}" class="btn btn-primary">View Project</a>
         </div>
       </div>
     </div>
     <!-- Add more project cards in a similar manner -->
     <div class="col-md-4">
       <div class="card">
-        <img class="card-img-top" src="/img/BBT_PP/Device.png" alt="Building Better Together">
+        <img class="card-img-top" src="../static/img/BBT_PP/Device.png" alt="Building Better Together">
         <div class="card-body">
           <h5 class="card-title">Building Better Together</h5>
           <p class="card-text project-description">As part of a multidisciplinary team consisting of occupational behavior students, I gained valuable experience in integrating various needs and perspectives to design and develop assistive devices. Through a user-centered approach, I developed practical skills such as time and resource management, and interpreting client feedback, which enabled me to deliver an effective solution on time and under budget.</p>
-          <a href="BB_Together.html" class="btn btn-primary">View Project</a>
+          <a href="{{ url_for('BB_Together') }}" class="btn btn-primary">View Project</a>
         </div>
       </div>
-    </div>    
+    </div>      
   </div>
 </div>
 </body>
 </html>
-
-

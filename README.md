@@ -11,12 +11,3 @@ Flask
 Bootstrap
 
 Contact information:
-
-
-            <a class="nav-link" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/qualifications">Qualifications</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/projects">Projects</a>

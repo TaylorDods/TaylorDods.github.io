@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{{ url_for('static', filename='css/custom.css') }}" rel="stylesheet">
+
+  <title>Shell Eco-Marathon: Chassis Design - Taylor Dods E-Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <h1 class="navbar-brand">Taylor Dods</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('home') }}">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('qualifications') }}">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{{ url_for('projects') }}">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <script src="../static/js/bootstrap.bundle.min.js"></script>
+
+  <div class="container mt-5">
+    <h2>Shell Eco-Marathon: Chassis Design</h2>
+    <p>
+        The objective of this project was to design and implement a lightweight and energy-efficient chassis for the Shell Eco-Marathon competition. As a member of a four-person team, my role was to specialize in energy and finite element analysis.
+
+        We used various technologies such as SolidWorks, ANSYS, python, and design for manufacturability, sustainability, assembly, & cost optimization to create a viable chassis design that would meet the energy consumption requirements of the competition while integrating effectively with other vehicle components.
+        
+        The primary challenge we faced during the project was to design the chassis using previously purchased carbon fiber tubing while ensuring effective integration with the vehicle shell, power system, and storage space. To address this challenge, we utilized an iterative design process leveraging Quality Function Deployment (QFD) and maintained regular and effective communication with other groups.
+        
+        The outcome of the project was a lightweight, structurally sound, and modular chassis design that allowed for the design to use the existing parts and facilitate changes later on. As a result of our efforts, our team's chassis design was selected to be built for the competition.
+        
+        Overall, this project provided valuable experience in engineering design, collaboration, and problem-solving, and helped us to develop skills in utilizing various technologies and processes to create an innovative and effective solution.
+    </p>
+    
+    <!-- You can also add images, videos, or any other content related to the project -->
+    <img src="../static/img/Chassis_SW.png" alt="Chassis Design" width="25%" />
+    <img src="../static/img/Chassis_ANSYS.png" alt="Chassis ANSYS" width="25%" />
+    
+  </div>
+
+</body>
+</html>

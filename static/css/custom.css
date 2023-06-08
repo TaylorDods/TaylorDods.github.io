@@ -1,0 +1,65 @@
+/* Add background image to the body */
+body {
+  background-image: url('../img/Background.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  }
+  
+/* Change the text color */
+body, h1, h2, h3, h4, h5, h6, p, a {
+  color: #ffffff; /* Replace with your desired text color */
+}
+
+/* Change the titlebar text color */
+.navbar-brand {
+  color: #ffffff; /* Replace with your desired text color */
+}
+
+/* Change the navigation link text color */
+.nav-link {
+  color: #ffffff; /* Replace with your desired text color */
+}
+
+/* Apply the same margin and padding to all navigation links */
+.navbar-nav .nav-item .nav-link {
+  margin: 0;
+  padding: .5rem 1rem;
+}
+
+/* Reset the margins and padding of the navbar */
+.navbar {
+  margin: 0;
+  padding: 0;
+}
+
+/* Reset the margins and padding of the unordered list */
+.navbar-nav {
+  margin: 0;
+  padding: 0;
+}
+
+/* Add semi-transparent background to text containers */
+.container {
+  background-color: rgba(0, 0, 0, 0.8); /* Change the color and transparency as desired */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Change the color of related projects text so it is easily visable */
+.project-link {
+  font-weight: bold;
+  color: #524ac2f4;
+}
+
+/* Change the color of projects description text so it is easily visable */
+.project-description {
+  color: #333;
+}
+
+.navbar-brand:hover {
+  color: inherit !important; 
+  cursor: default !important;
+  text-decoration: none !important;
+}

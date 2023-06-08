@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="/static/css/custom.css" rel="stylesheet">
+
+  <title>Taylor Dods E-Portfolio</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container">
+      <h1 class="navbar-brand">Taylor Dods</h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/qualifications">Qualifications</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/projects">Projects</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Bootstrap Bundle JS -->
+  <script src="/static/js/bootstrap.bundle.min.js"></script> 
+
+  <div class="container mt-5">
+    <h2>Education</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Bachelor of Mechanical Engineering, Queen's University, 2022</li>
+    </ul>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Relevant Courses</h2>
+    <ul class="list-group">
+      <li class="list-group-item">
+        Shell Eco-marathon Urban Concept - Chassis Design, Dr. Jan Sneep, 2022
+        <br>
+        <small>
+          Related projects: 
+          <a href="/Shell_Eco_Chassis" class="project-link">Shell Eco Marathon Chassis Design</a>
+        </small>      
+      </li>
+      <li class="list-group-item">Business Fundamentals, Darren McCaugherty, 2022</li>
+    </ul>
+  </div>
+
+  <div class="container mt-5">
+    <h2>Technical Skills</h2>
+    <ul class="list-group">
+      <li class="list-group-item">Strong problem-solving skills and critical thinking</li>
+      <li class="list-group-item">Proficiency in CAD software (AutoCAD, REVIT, & SolidWorks)</li>
+      <li class="list-group-item">Familiarity with Finite Element Analysis (FEA) tools (SolidWorks & ANSYS)</li>
+      <li class="list-group-item">Proficiency in programming languages (Python, MATLAB, C++, & HTML)</li>
+      <li class="list-group-item">Knowledge of dynamics, vibrations, and control systems</li>
+      <li class="list-group-item">Familiarity with design for manufacturability, sustainability, assembly, & cost optimization</li>
+      <li class="list-group-item">Experience in project management and teamwork</li>
+      <li class="list-group-item">Understanding of materials science</li>
+      <li class="list-group-item">Experience with version control systems (GIT)</li>
+      <li class="list-group-item">Experience with data cleaning and preprocessing techniques</li>
+    </ul>
+  </div>
+
+</body>
+</html>

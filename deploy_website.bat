@@ -3,7 +3,7 @@ echo Checking if remote repository exists...
 git ls-remote origin >nul 2>&1
 if errorlevel 1 (
     echo Adding remote repository...
-    git remote add origin https://github.com/%1/%1.github.io.git
+    git remote add origin https://github.com/TaylorDods/TaylorDods.github.io.git
 ) else (
     echo Remote repository already exists.
 )
